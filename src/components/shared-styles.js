@@ -180,4 +180,3 @@ export const BookButtonStyle = html`<style>
     color: #FFF;
   }
 </style>`;
-

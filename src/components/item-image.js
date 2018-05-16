@@ -7,6 +7,14 @@ class ItemImage extends LitElement {
         :host {
           display: block;
           position: relative;
+          width: 64px;
+          pointer-events: none;
+        }
+        
+        :host::before {
+          content: "";
+          display: block;
+          padding-top: 160%;
         }
 
         #placeholder {
@@ -55,6 +63,7 @@ class ItemImage extends LitElement {
           opacity: 1;
           transition: 0.5s opacity;
         }
+                
       </style>
 
       <div id="placeholder" style$="${placeholder ? `background-image: url('${placeholder}')` : ''}" loaded?="${_loaded}">
