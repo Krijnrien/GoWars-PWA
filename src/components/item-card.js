@@ -9,7 +9,6 @@ class ItemCard extends LitElement {
     const icon = item ? item.icon : '';
     const name = item ? item.name : '';
     // const icon = item ? info.imageLinks.thumbnail.replace('http', 'https').replace('&edge=curl', '') : '';
-
     return html`
       <style>
         :host {

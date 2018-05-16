@@ -13,7 +13,7 @@ import {item, itemSelector} from '../reducers/item.js';
 
 // We are lazy loading its reducer.
 store.addReducers({
-    item: item,
+    item,
 });
 
 class ItemDetail extends connect(store)(PageViewElement) {

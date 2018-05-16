@@ -151,8 +151,6 @@ export const ItemDetailTemplate = (item, _lastVisitedListPage, _showOffline) => 
           <h3>Description</h3>
           ${description}
         </div>
-
-
       </section>
 
       <item-offline hidden="${!_showOffline}" on-refresh="${() => store.dispatch(refreshPage())}"></item-offline>

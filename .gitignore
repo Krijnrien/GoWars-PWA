@@ -4,6 +4,8 @@ test/integration/screenshots-current
 yarn.lock
 .DS_Store
 
+idea/
+idea
 .idea
 
 ### Polymer ###

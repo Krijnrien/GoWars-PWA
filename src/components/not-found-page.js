@@ -2,7 +2,7 @@ import {html} from '@polymer/lit-element'
 import {updateMetadata} from 'pwa-helpers/metadata.js';
 import {PageViewElement} from './page-view-element.js';
 
-class PageNotFound extends PageViewElement {
+class NotFoundPage extends PageViewElement {
     _render() {
         updateMetadata({
             //TODO Title?
@@ -29,4 +29,4 @@ class PageNotFound extends PageViewElement {
     }
 }
 
-window.customElements.define('not-found-page', PageNotFound);
+window.customElements.define('not-found-page', NotFoundPage);

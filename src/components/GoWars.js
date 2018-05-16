@@ -77,7 +77,7 @@ class GoWars extends connect(store)(LitElement) {
                 </main>
             
                 <footer>
-                  <p>Made with &lt;3 by the Polymer team.</p>
+                  <p>&copy; 2018 Krijn van der Burg</p>
                 </footer>
             
                 <snack-bar active?="${_snackbarOpened}">
@@ -137,4 +137,4 @@ class GoWars extends connect(store)(LitElement) {
     }
 }
 
-window.customElements.define('book-app', GoWars);
+window.customElements.define('go-wars', GoWars);

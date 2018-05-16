@@ -60,7 +60,7 @@ const loadPage = (page, query, itemId) => async (dispatch, getState) => {
     }
 
     if (page === '404') {
-        import('../components/pageNotFound.js');
+        import('../components/not-found-page.js');
     }
 
     dispatch(updatePage(page));
