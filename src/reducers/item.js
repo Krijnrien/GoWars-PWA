@@ -29,7 +29,7 @@ export const item = (state = {}, action) => {
     default:
       return state;
   }
-}
+};
 
 const idSelector = state => state.item.id;
 //TODO Fix naming scheme, also item.item?

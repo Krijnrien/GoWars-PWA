@@ -21,6 +21,10 @@ export const searchItems = (query) => (dispatch, getState) => {
   }
 };
 
+
+
+
+
 const shouldSearchItems = (state, query) => {
   return state.item.failure || state.item.query !== query && !state.item.isFetching;
 }

@@ -4,6 +4,8 @@ export const ItemCardTemplate = (item) => {
     const id = item ? item.id : '';
     const icon = item ? item.icon : '';
     const name = item ? item.name : '';
+    const description = item ? item.description : '';
+    const rarity = item ? item.rarity : '';
 
     return html`
       <style>
@@ -11,8 +13,7 @@ export const ItemCardTemplate = (item) => {
           display: block;
         }
 
-        a,
-        .placeholder {
+        a, .placeholder {
           display: flex;
           flex-direction: column;
           position: absolute;
@@ -26,9 +27,8 @@ export const ItemCardTemplate = (item) => {
 
         .info {
           display: flex;
-          flex-direction: row-reverse;
         }
-
+        
         .desc {
           position: relative;
           flex: 1;
@@ -49,8 +49,6 @@ export const ItemCardTemplate = (item) => {
           left: 0;
           height: 40px;
         }
-
-
 
         .info-section {
           display: flex;
@@ -88,6 +86,7 @@ export const ItemCardTemplate = (item) => {
         [hidden] {
           display: none !important;
         }
+        
 
         .placeholder {
           animation: shimmer 1s infinite linear forwards;
@@ -164,7 +163,7 @@ export const ItemCardTemplate = (item) => {
             margin: 8px 16px;
           }
 
-          item--image {
+          item-image {
             width: 128px;
           }
 
@@ -213,7 +212,7 @@ export const ItemCardTemplate = (item) => {
 
       <a href="/detail/${id}">
         <div class="info">
-            <item-image src="${icon}" alt="${name}"></item-image>
+            <item-image src="${icon}" alt="${name}" class="${rarity}"></item-image>
           <div class="info-section">
             <div class="title-container">
               <h2 class="title">${name}</h2><slot></slot>
@@ -223,7 +222,7 @@ export const ItemCardTemplate = (item) => {
             </div>
           </div>
         </div>
-        <div class="desc">${name}</div>
+        <div class="desc">${description}</div>
       </a>
 
       <div class="placeholder" fadeout?="${name}">

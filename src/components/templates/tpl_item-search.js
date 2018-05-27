@@ -8,7 +8,7 @@ import {updateLocationURL} from "../../actions/app";
 export const ItemSearchTemplate = (_query, _items, _showOffline) => {
 
     updateMetadata({
-        title: `${_query ? `${_query} - ` : ''} - item`,
+        title: `${_query ? `${_query}` : ''} - item`,
         description: 'Search for item'
     });
 

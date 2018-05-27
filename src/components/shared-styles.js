@@ -175,8 +175,36 @@ export const BookButtonStyle = html`<style>
     text-transform: uppercase;
   }
 
-  .item-button:active {
+  .item-button:junk {
     background-color: var(--app-dark-text-color);
     color: #FFF;
   }
+</style>`;
+
+export const RarityStyle = html`<style>{
+        .junk{
+        border: 1px solid #AAA;
+    }
+    .basic{
+        border: 1px solid #000;
+    }
+    .fine{
+        border: 1px solid #62A4DA;
+    }
+    .masterwork{
+        border: 1px solid #1a9306;
+    }
+    .rare{
+        border: 1px solid #fcd00b;
+    }
+    .exotic{
+        border: 1px solid #ffa405;
+    }
+    .ascended{
+        border: 1px solid #fb3e8d;
+    }
+    .legendary{
+        border: 1px solid #4C139D;
+    }
+}
 </style>`;

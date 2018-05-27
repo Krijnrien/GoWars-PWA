@@ -18,7 +18,6 @@ class ItemImage extends LitElement {
         }
 
         #placeholder {
-          position: absolute;
           top: 0;
           bottom: 0;
           left: 0;
@@ -42,11 +41,6 @@ class ItemImage extends LitElement {
         }
 
         img {
-          position: absolute;
-          top: 0;
-          right: 0;
-          bottom: 0;
-          left: 0;
           max-width: 100%;
           max-height: 100%;
           margin: 0 auto;
